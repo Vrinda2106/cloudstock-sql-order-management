@@ -1,0 +1,463 @@
+{
+  "info": {
+    "_postman_id": "214cd004-077c-404a-a580-335afb144d2b",
+    "name": "CLOUD STOCK API",
+    "description": "GET /  \nGET /health  \nGET /products  \nGET /orders  \nGET /analytics/top-products  \nGET /abc",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "57871827",
+    "_collection_link": "https://go.postman.co/collection/57871827-214cd004-077c-404a-a580-335afb144d2b?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Root",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": [
+        {
+          "name": "Root",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                ""
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "x-powered-by",
+              "value": "Express"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "content-length",
+              "value": "53"
+            },
+            {
+              "key": "etag",
+              "value": "W/\"35-DB6nehorbKdUqUt6EfWK1vb93e4\""
+            },
+            {
+              "key": "date",
+              "value": "Tue, 01 Sep 2026 09:26:57 GMT"
+            },
+            {
+              "key": "connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "keep-alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n  \"message\": \"CloudStock API is running successfully!\"\n}"
+        },
+        {
+          "name": "Health",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/health",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "health"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "x-powered-by",
+              "value": "Express"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "content-length",
+              "value": "49"
+            },
+            {
+              "key": "etag",
+              "value": "W/\"31-Aw/ENYqRBtLI86atdMKJ45YgOWo\""
+            },
+            {
+              "key": "date",
+              "value": "Tue, 01 Sep 2026 09:32:31 GMT"
+            },
+            {
+              "key": "connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "keep-alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n  \"server\": \"running\",\n  \"database\": \"MySQL connected\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "Health",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Products",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": [
+        {
+          "name": "Products",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/products",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "products"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "x-powered-by",
+              "value": "Express"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "content-length",
+              "value": "229"
+            },
+            {
+              "key": "etag",
+              "value": "W/\"e5-y5jlNg/+/DDfdfigAmQ9R6v9PNQ\""
+            },
+            {
+              "key": "date",
+              "value": "Tue, 01 Sep 2026 09:31:10 GMT"
+            },
+            {
+              "key": "connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "keep-alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "[\n  {\n    \"id\": 1,\n    \"name\": \"Mechanical Keyboard\",\n    \"sku\": \"KB101\",\n    \"price\": \"2499.00\",\n    \"stock\": 25\n  },\n  {\n    \"id\": 2,\n    \"name\": \"Wireless Mouse\",\n    \"sku\": \"MS101\",\n    \"price\": \"1299.00\",\n    \"stock\": 40\n  },\n  {\n    \"id\": 3,\n    \"name\": \"USB-C Hub\",\n    \"sku\": \"HB101\",\n    \"price\": \"1899.00\",\n    \"stock\": 30\n  }\n]"
+        }
+      ]
+    },
+    {
+      "name": "Orders",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": [
+        {
+          "name": "Orders",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/orders",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "orders"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "x-powered-by",
+              "value": "Express"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "content-length",
+              "value": "250"
+            },
+            {
+              "key": "etag",
+              "value": "W/\"fa-NuD/DmQOZFSz7c1GIOS3+ubqTsQ\""
+            },
+            {
+              "key": "date",
+              "value": "Tue, 01 Sep 2026 09:29:37 GMT"
+            },
+            {
+              "key": "connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "keep-alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "[\n  {\n    \"order_id\": 1,\n    \"customer\": \"Aarav Sharma\",\n    \"product\": \"Mechanical Keyboard\",\n    \"quantity\": 1,\n    \"unit_price\": \"2499.00\",\n    \"total\": \"2499.00\"\n  },\n  {\n    \"order_id\": 1,\n    \"customer\": \"Aarav Sharma\",\n    \"product\": \"Wireless Mouse\",\n    \"quantity\": 2,\n    \"unit_price\": \"1299.00\",\n    \"total\": \"2598.00\"\n  }\n]"
+        }
+      ]
+    },
+    {
+      "name": "Top Products",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": [
+        {
+          "name": "Top Products",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/analytics/top-products",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "analytics",
+                "top-products"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "x-powered-by",
+              "value": "Express"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "content-length",
+              "value": "132"
+            },
+            {
+              "key": "etag",
+              "value": "W/\"84-MQNU/cX8DU80bcACUxpRrh5AOm4\""
+            },
+            {
+              "key": "date",
+              "value": "Tue, 01 Sep 2026 09:30:07 GMT"
+            },
+            {
+              "key": "connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "keep-alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "[\n  {\n    \"name\": \"Wireless Mouse\",\n    \"units_sold\": \"2\",\n    \"revenue\": \"2598.00\"\n  },\n  {\n    \"name\": \"Mechanical Keyboard\",\n    \"units_sold\": \"1\",\n    \"revenue\": \"2499.00\"\n  }\n]"
+        }
+      ]
+    },
+    {
+      "name": "Invalid Route",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": [
+        {
+          "name": "Invalid Route",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/abc",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "abc"
+              ]
+            }
+          },
+          "status": "Not Found",
+          "code": 404,
+          "_postman_previewlanguage": "html",
+          "header": [
+            {
+              "key": "x-powered-by",
+              "value": "Express"
+            },
+            {
+              "key": "content-security-policy",
+              "value": "default-src 'none'"
+            },
+            {
+              "key": "x-content-type-options",
+              "value": "nosniff"
+            },
+            {
+              "key": "content-type",
+              "value": "text/html; charset=utf-8"
+            },
+            {
+              "key": "content-length",
+              "value": "142"
+            },
+            {
+              "key": "date",
+              "value": "Tue, 01 Sep 2026 09:30:29 GMT"
+            },
+            {
+              "key": "connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "keep-alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot GET /abc</pre>\n</body>\n</html>\n"
+        },
+        {
+          "name": "Invalid Route",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/abc",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "abc"
+              ]
+            }
+          },
+          "status": "Not Found",
+          "code": 404,
+          "_postman_previewlanguage": "html",
+          "header": [
+            {
+              "key": "x-powered-by",
+              "value": "Express"
+            },
+            {
+              "key": "content-security-policy",
+              "value": "default-src 'none'"
+            },
+            {
+              "key": "x-content-type-options",
+              "value": "nosniff"
+            },
+            {
+              "key": "content-type",
+              "value": "text/html; charset=utf-8"
+            },
+            {
+              "key": "content-length",
+              "value": "142"
+            },
+            {
+              "key": "date",
+              "value": "Tue, 01 Sep 2026 09:30:29 GMT"
+            },
+            {
+              "key": "connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "keep-alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot GET /abc</pre>\n</body>\n</html>\n"
+        }
+      ]
+    }
+  ]
+}
